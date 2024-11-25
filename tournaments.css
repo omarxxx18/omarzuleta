@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+:root {
+
+    --primary-color: #ffc800;
+    --sucundary-color: #06a77d;
+    --third-color: rgb(255, 255, 255);
+    --fourth-color: rgb(0, 0, 0);
+    --fifth-color: #d9d9d9;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logochess {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logoclaud {
+    color: #FFC800;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+.language-select{
+   
+    border: none;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    color: #FFC800;
+    
+}
+.active2:hover{
+    color: #FFC800;
+    
+}
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.login-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    background: none;
+    color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.signup-btn {
+    padding: 0.5rem 1rem;
+    background-color: #FFC800;
+    border:1px solid #FFC800;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.login-btn:hover{
+    border: 1px solid #FFC800;
+    background: none;
+    color: #FFC800;
+
+}
+.signup-btn:hover{
+    background: #000000;
+    border: 1px solid #000000;
+    color: rgb(255, 255, 255);
+}
+/*body*/
+
+.section-title {
+    text-align: center;
+    color: #06A77D;
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    margin: 2rem auto;
+    width: fit-content;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+
+.img {
+
+    border: 1px solid rgb(7, 3, 3);
+    width: 200px;
+
+    position: relative;
+    inset: 0;
+    margin: auto;
+
+}
+/* mi pagina*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    
+    background-color: #f5f5f5;
+    width: 700px;
+    height: 2000px;
+    margin-left: 260px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+section{
+    background-color: #f5f5f5;
+    padding: 20px;
+    width: 380px;
+    height: 1800px;
+    margin-left:50px;
+    margin-top: 28px;
+    border-radius: 20px;
+}
+
+/*imagen 1 de lado izquierdo*/
+.foto_01c  {
+    background-color: #90e0fb;
+    width: 670px;/* esto es para el ancho de la imagen*/
+    height: 700;/* esto es para la altura de la imagen*/
+    margin-top: 0px;/*esto es para bajar la imagen */
+    margin-left: 1px;/*para rodar la imagen para la derecha*/
+    border-radius: 1cm;
+    
+}
+
+.foto_01c img {
+    display: flex; /*para modificar la el tamaño*/
+    width: 670px;/* esto es para el ancho de la imagen*/
+    height: 310;/* esto es para la altura de la imagen*/
+    margin-top: 0px;/*esto es para bajar la imagen */
+    margin-left:0px;/*para rodar la imagen para la derecha*/
+    border-radius: 1cm;
+
+
+}
+
+
+.mensaje_01 h2{
+    display: flex; /*para modificar la el tamaño*/
+    width: 570px;/* esto es para el ancho de la imagen*/
+    height: 310;/* esto es para la altura de la imagen*/
+    margin-left: 30px;/*para rodar la imagen para la derecha*/
+    border-radius: 4px;
+   color: #ffff;
+    
+}
+
+/*imagen 2 de lado izquierdo*/
+.foto_02c  {
+    background-color: #f13a3a;
+    width: 670px;/* esto es para el ancho de la imagen*/
+    height: 700;/* esto es para la altura de la imagen*/
+    margin-top: 90px;/*esto es para bajar la imagen */
+    margin-left: 0px;/*para rodar la imagen para la derecha*/
+    border-radius: 1cm;
+    
+}
+
+.foto_02c img {
+    display: flex; /*para modificar la el tamaño*/
+    width: 670px;/* esto es para el ancho de la imagen*/
+    height: 310;/* esto es para la altura de la imagen*/
+    margin-top: 90px;/*esto es para bajar la imagen */
+    margin-left:0px;/*para rodar la imagen para la derecha*/
+    border-radius: 1cm;
+
+}
+
+
+.mensaje_02 h2{
+    display: flex; /*para modificar la el tamaño*/
+    width: 570px;/* esto es para el ancho de la imagen*/
+    height: 310;/* esto es para la altura de la imagen*/
+    margin-left: 30px;/*para rodar la imagen para la derecha*/
+    border-radius: 20px;
+   color: #ffffff;
+    
+}
+
+/*imagen 3 de lado izquierdo*/
+.foto_03c  {
+    background-color: #2c5f98;
+    width: 670px;/* esto es para el ancho de la imagen*/
+    height: 700;/* esto es para la altura de la imagen*/
+    margin-top: 90px;/*esto es para bajar la imagen */
+    margin-left: 1px;/*para rodar la imagen para la derecha*/
+    border-radius: 1cm;
+    
+}
+
+.foto_03c img {
+    display: flex; /*para modificar la el tamaño*/
+    width: 670px;/* esto es para el ancho de la imagen*/
+    height: 310;/* esto es para la altura de la imagen*/
+    margin-top: 90px;/*esto es para bajar la imagen */
+    margin-left:0px;/*para rodar la imagen para la derecha*/
+    border-radius: 1cm;
+
+}
+
+
+.mensaje_03 {
+    display: flex; /*para modificar la el tamaño*/
+    width: 570px;/* esto es para el ancho de la imagen*/
+    height: 310;/* esto es para la altura de la imagen*/
+    margin-left: 30px;/*para rodar la imagen para la derecha*/
+    border-radius: 20px;
+   color: #ffffff;
+    
+}
+
+/*imagen 4 de lado izquierdo*/
+.foto_04c  {
+    background-color: #37cf46;
+    width: 670px;/* esto es para el ancho de la imagen*/
+    height: 700;/* esto es para la altura de la imagen*/
+    margin-top: 90px;/*esto es para bajar la imagen */
+    margin-left: 1px;/*para rodar la imagen para la derecha*/
+    border-radius: 1cm;
+    
+}
+
+.foto_04c img {
+    display: flex; /*para modificar la el tamaño*/
+    width: 670px;/* esto es para el ancho de la imagen*/
+    height: 310;/* esto es para la altura de la imagen*/
+    margin-top: 90px;/*esto es para bajar la imagen */
+    margin-left:0px;/*para rodar la imagen para la derecha*/
+    border-radius: 1cm;
+
+}
+
+
+.mensaje_04 {
+    display: flex; /*para modificar la el tamaño*/
+    width: 570px;/* esto es para el ancho de la imagen*/
+    height: 310;/* esto es para la altura de la imagen*/
+    margin-left: 30px;/*para rodar la imagen para la derecha*/
+    border-radius: 20px;
+   color: #ffffff;
+    
+}
+
+/* 1 al 4 imagen del lado derecho */ 
+/*div del lado derecho  */
+
+
+
+.foto_dere_01{
+    
+    background-color: #06A77D;
+   display: block;
+    border-radius: 25px;
+    width: 390px;
+    height: 500px;
+   margin-top: 0px;/*esto es para bajar la imagen */
+}
+.ima .l1{
+    font-size: 24px;
+    margin-top: 12px;
+    margin-left: 7px;
+    color: #ffff;
+
+}
+.ima .icono{
+    color: #06A77D;
+    height: 24px;
+    margin-left: 90px;
+    
+}
+.ima hr{
+    width: 384px;
+}
+hr{
+    margin-top: 9px;
+}
+.ima{ /* ima es el div donde esta primera imagen */
+    background-color: #06A77D;
+    width: 390px;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-radius: 18px;
+}
+.imagen1 {    /* esto es la imagen */
+    margin-top: 0px;
+    margin-left: 8px;
+    height: 99px;
+    width: 176px;    
+}
+.ima h2{  /*este es el tamaño de la letra*/
+    font-size: 15px;
+    margin-top: 19px;
+    margin-left: 12px;
+}
+.palabra h1{
+    font-size: 24px;
+    display: flex;
+    margin-top: 1px;
+}
+/*aqui termina la 1 al 4 imagen*/
+
+/* numero 2 */
+
+
+.foto_dere_02{
+    
+    background-color: #ffc800;
+   display: block;
+    border-radius: 25px;
+    width: 390px;
+    height: 500px;
+   margin-top: 90px;/*esto es para bajar la imagen */
+}
+.ima2 .l2{
+    font-size: 24px;
+    margin-top: 12px;
+    margin-left: 7px;
+    
+
+}
+.ima2 .icono{
+    height: 24px;
+    margin-left: 90px;
+}
+.ima2 hr{
+    width: 384px;
+    
+}
+hr{
+    margin-top: 9px;
+}
+.ima2{ /* ima es el div donde esta primera imagen */
+    background-color:#ffc800;
+    width: 390px;
+    display: flex;
+    margin-right: 1%;
+    margin-top: 0px;
+    border-radius: 18px;
+}
+.imagen1 {    /* esto es la imagen */
+    margin-top: 7px;
+    margin-left: 8px;
+    height: 99px;
+    width: 176px;    
+}
+.ima2 h2{  /*este es el tamaño de la letra*/
+    font-size: 15px;
+    margin-top: 19px;
+    margin-left: 12px;
+
+}
+.palabra h1{
+    font-size: 24px;
+    display: flex;
+    margin-top: 1px;
+}
+
+/*numero 3*/
+
+.foto_dere_03{
+    
+    background-color: #564F4F;
+   display: block;
+    border-radius: 25px;
+    width: 390px;
+    height: 500px;
+   margin-top: 90px;/*esto es para bajar la imagen */
+}
+.ima3 .l3{
+    font-size: 24px;
+    margin-top: 12px;
+    margin-left: 5px;
+    color: white;
+    
+
+}
+.ima3 .icono{
+    height: 27px;
+    margin-left: 170px;
+}
+.ima3 hr{
+    width: 384px;
+  
+    
+}
+hr{
+    margin-top: 1px;
+    background-color: #0c0c0b;
+    
+
+}
+.ima3{ /* ima es el div donde esta primera imagen */
+    background-color:#564F4F;
+    width: 390px;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 1px;
+    border-radius: 18px;
+}
+.imagen1 {    /* esto es la imagen */
+    margin-top: 7px;
+    margin-left: 8px;
+    height: 99px;
+    width: 176px;    
+}
+.ima3 h2{  /*este es el tamaño de la letra*/
+    font-size: 15px;
+    margin-top: 19px;
+    margin-left: 12px;
+    color: white;
+
+}
+.palabra h1{
+    font-size: 24px;
+    display: flex;
+    margin-top: 1px;
+}
+
+
+
+/*   footer  */
+
+/* Estilo general del pie de página */
+.footer {
+    background-color: #06A77D;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-abaut {
+    text-align: center;
+    color: #FFC800;
+}
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #FFC800;
+    text-decoration: underline;
+}
+
+/* Iconos de redes sociales*/
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.facebook:hover{
+    transform: scale(1.1);
+}
+.x:hover{
+    transform: scale(1.1);
+}
+.instagram:hover{
+    transform: scale(1.1);
+}
+.ln:hover{
+    transform: scale(1.1);
+}
+/* Sección inferior del pie de página */
+.footer-bottom {
+    background-color: #037053;
+    padding: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+@media
+ (max-width:700px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+
+        padding: 10px;
+    }
+
+
+}
